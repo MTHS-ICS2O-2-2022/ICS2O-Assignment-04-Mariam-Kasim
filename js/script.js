@@ -11,34 +11,36 @@ function myButtonClicked() {
   let sizeCost = 0
   let flavorCost = 0
 
-
   // input
   const TAX = 0.13
   const cottonCandySize = document.getElementById("cottonCandySize").value
   const cottonCandyFlavor = document.getElementById("cottonCandyFlavor").value
 
   // process
-  if (cottonCandySize == "small") {
+  if (cottonCandySize == "Small") {
     sizeCost = 2.00
-  } else if (cottonCandySize == "medium") {
+  } else if (cottonCandySize == "Medium") {
     sizeCost = 3.00
-  } else if (cottonCandySize == "large") {
+  } else if (cottonCandySize == "Large") {
     sizeCost = 4.00
-  } else if (cottonCandySize == "extra large") {
+  } else if (cottonCandySize == "Extra Large") {
     sizeCost = 5.00
+  } else {
+    console.log("Invalid input")
   }
 
-  if (cottonCandyFlavor == "banana") {
+  if (cottonCandyFlavor == "Banana") {
     flavorCost=2.00
-  } else if (cottonCandyFlavor == "birthday cake") {
+  } else if (cottonCandyFlavor == "Birthday Cake") {
     flavorCost=2.00
-  } else if (cottonCandyFlavor == "blue raspberry") {
+  } else if (cottonCandyFlavor == "Blue Raspberry") {
     flavorCost=2.00
-  } else if (cottonCandyFlavor == "bubblegum") {
+  } else if (cottonCandyFlavor == "Bubblegum") {
     flavorCost=2.00
   }
 
   let subtotal = sizeCost + flavorCost
+
 
   const tax = subtotal * TAX
   const total = subtotal * (1 + TAX)
