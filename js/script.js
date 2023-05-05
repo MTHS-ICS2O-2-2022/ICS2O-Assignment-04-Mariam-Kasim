@@ -35,7 +35,7 @@ function myButtonClicked() {
     flavorCost=2.00
   } else if (cottonCandyFlavor == "Blue Raspberry") {
     flavorCost=2.00
-  } else if (cottonCandyFlavor == "Bubblegum") {
+  } else if (cottonCandyFlavor == "Bubble Gum") {
     flavorCost=2.00
   }
 
